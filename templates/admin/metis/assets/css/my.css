@@ -1,0 +1,161 @@
+/* Global Styles */
+
+.capitalize{
+	text-transform: capitalize;	
+}
+/*-------------table 12-2014 -------------------*/
+table{
+	text-align: left;
+	text-transform: capitalize;
+}
+table th.center, table td.center{
+	text-align: center;
+}
+table th td{
+	font-size: 14px;
+}
+table td.no-capitalize{
+	text-transform: none;
+}
+table th:first-child{
+	width: 3%;
+}
+table th:last-child{
+	width: 14%;
+}
+table td.td_no_data{
+	text-align: center;
+	color: red;
+}
+table tr.tr-head td input{
+	background-color: rgb(220, 249, 188);;
+	color: black;
+	font-weight: bold;
+}
+/*----------------- pagination -------------------*/
+
+.pagination{
+	font-size: 11px;
+	margin: 7px 0;
+	text-align: right;
+	float: right;
+}
+
+.tablefooter .pagination{
+	float: right;
+	padding: 5px 10px;
+}
+
+.pagination a, .pagination strong{
+	padding:7px 10px;
+	color: #333;
+	background: white;
+	margin: 0;
+	border: 1px solid #E4E4E4;
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+.pagination strong{
+	font-weight: bold;
+	color: #ffffff;
+	background: #428bca;
+}
+/*----------------- pagination ends-------------------*/
+
+
+/*-------------breadcrumb starts -------------------*/
+#breadcrumb ,#breadcrumb a{
+	color: #ccc;
+	text-decoration: none;
+}
+#breadcrumb span.active{
+	color: white;
+	text-decoration: none;
+}
+/*-------------breadcrumb ends -------------------*/
+
+/*-----------------panel 17-dec-2014 ---------------------------*/
+.panel-heading {
+	font-size: 1.4em;
+}
+.panel-footer{
+	min-height: 55px;
+}
+/*-----------------panel ends---------------------------*/
+
+
+/*-----------------from  21-dec-2014 ---------------------------*/
+form .thumbnail img{
+	width: 120px;
+	height:80px;
+}
+/*-----------------panel ends---------------------------*/
+
+pre, #codeigniter_profiler{
+	margin-left: 18%;	
+}
+@media(min-width:768px) {
+    #page-wrapper {
+        min-height: 100px;
+    }
+}
+
+
+.content_ifr{
+	min-height: 500px;
+}
+
+/* sort menu */
+
+.mjs-nestedSortable-error {
+	background: #fbe3e4; border-color: transparent;
+}
+
+ol {
+	margin: 0; padding: 0; padding-left: 30px;
+}
+
+ol.sortable,ol.sortable ol {
+	margin: 0 0 0 25px; padding: 0; list-style-type: none;
+}
+
+ol.sortable {
+	margin: 20px 10px;
+}
+
+.sortable li {
+	margin: 5px 0 0 0; padding: 0;
+}
+
+.sortable li div {
+	border: 1px solid #d4d4d4; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border-color: #D4D4D4 #D4D4D4 #BCBCBC; padding: 6px; margin: 0; cursor: move; background: #f6f6f6; background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed) ); background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+	background: linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#ffffff', endColorstr = '#ededed', GradientType = 0 );
+}
+
+/** .alert-success **/
+.alert-success{
+	text-transform: capitalize;
+}
+
+/** metis **/
+.inner{
+	padding-top: 1%;
+}
+#left{
+	position: none !important; 
+}
+/** tabs **/
+.tab-content{
+	padding-top: 10px;
+}
+/** nestable **/
+.ui-sortable li{
+	text-transform: capitalize;
+}
+
+.panel-heading{
+	text-transform: capitalize;
+}
+

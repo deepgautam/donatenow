@@ -1,0 +1,114 @@
+<?
+		$date=explode('.','02.01.2012');
+		if(count($date)==1)
+			echo "Bad format";
+		else{
+			show_pre($date);
+			$y=$date[2];
+			$d=$date[1];
+			$m=$date[0];
+			if($m==1){
+				$r=$d;
+			}
+			else{
+				$r=$d+31;
+			}
+			echo $r;
+		}
+
+
+
+		$oldNickname='old';
+		$newNickname='1new$#<>-_12';
+		$users=['old','oldanother'];
+		if(in_array($oldNickname, $users))
+		{
+			if(!in_array($newNickname, $users)){
+				if(preg_match("/^([a-z0-9\$\#\<\>\-\_])+$/i", $newNickname)){
+					echo "your nickname has been changed from $oldNickname to $newNickname";
+				}
+				else
+					echo "1 Failed to update";
+			}
+			else
+				echo "2 Failed to update";
+		}
+		else
+			echo "3 Failed to update";
+
+
+
+<?php
+// Do not modify the Shipping class.
+abstract class Shipping
+{
+    private $_itemsCount;
+    private $_distance;
+
+    public function __construct($itemsCount, $distance)
+    {
+        $this->_itemsCount = $itemsCount;
+        $this->_distance = $distance;
+    }
+
+    abstract public function getFees();
+    
+    public function getDistance()
+    {
+        return $this->_distance;
+    }
+    
+    public function getItemsCount()
+    {
+        return $this->_itemsCount;
+    }
+}
+
+// You can modify code below this comment.
+class InternationalShipping extends Shipping
+{
+    private $_internationalDistance;
+
+    public function __construct($itemsCount, $distance, $internationalDistance)
+    {
+        parent::__construct($itemsCount, $distance);
+        $this->_internationalDistance = $internationalDistance;
+    }
+
+    public function getFees(){
+        return $this->getItemsCount() * ($this->getDistance() * .8 + $this->getinternationalDistance() * 1.2);        
+    }
+    public function getinternationalDistance()
+    {
+        return $this->_internationalDistance;
+    }
+
+}
+
+class LocalShipping extends Shipping
+{
+    public function getFees(){
+        return $this->getItemsCount() * $this->getDistance() * .8;
+    }
+}
+
+function calculateShippingFees($items) {
+
+    echo count($items);
+    echo "<pre>";
+    print_r($items);
+    echo "</pre>";
+    $r=0;
+    foreach ($items as $item) {
+        if($item instanceof InternationalShipping or $item instanceof LocalShipping){
+            $r=$r+$item->getFees();
+        }
+    }
+    echo $r;
+
+}
+
+calculateShippingFees(array(new InternationalShipping(5, 50, 150), new LocalShipping(6, 35)));
+//calculateShippingFees(array(new LocalShipping(6, 35)));
+
+?>

@@ -1,0 +1,80 @@
+/** custom **/
+#main_layout, body{
+	background: #f5f5f5 !important;
+}
+#main_layout h2{
+	border-bottom-style: double;
+	border-bottom-color: red;
+	padding-bottom: 10px;
+	border-bottom-width: 4px;
+	color: #07599E!important;
+	font-size: 30px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+/** category **/
+.category_article{
+	margin:0px !important;
+}
+#category_article_inner{
+	min-height: 296px !important; 
+	width: 1130px !important; 
+}
+/*	galery  */
+.portfolio-box {
+	margin: 15px 18px !important;
+}
+/* home */
+#courses p{
+	margin-bottom: 20px !important;
+	font-size: 21px !important;
+	font-weight: 200 !important;
+	line-height: 30px !important;
+	text-align: center !important;	
+}
+.img-slider{
+	width: 1080px !important;
+	height: 500px !important;
+	/*padding: 5px 5px !important;*/
+	/*overflow: hidden; */
+}
+
+.main-info {
+	/*padding:0 !important;*/
+}
+
+/*footer part*/
+#footer_address h4{
+	text-transform: capitalize;
+}
+/*footer sitemap*/
+.site-map ul li{
+	text-transform: capitalize;
+}
+/*contact page*/
+.contact-address{
+	text-transform: capitalize;
+}
+.contact-address ul li{
+	padding: 5px 0px;
+}
+.contact-address ul li i{
+	margin: 0px 5px;
+}
+
+/*contact page*/
+
+/*adminssion page*/
+ul.number li span{
+	background: #2dcc70;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 24px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+/*adminssion page*/

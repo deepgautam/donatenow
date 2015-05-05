@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A Simple Page with CKEditor</title>
+	<!-- Make sure the path to CKEditor is correct. -->
+	<script src="../ckeditor.js"></script>
+</head>
+<body>
+	<form>
+		<textarea name="editor" id="ckeditor" rows="10" cols="80">
+			This is my textarea to be replaced with CKEditor.
+		</textarea>
+		<script>
+			// Replace the <textarea id="ckeditor"> with a CKEditor
+			// instance, using default configuration.
+			CKEDITOR.replace( 'ckeditor');
+		</script>
+	</form>
+</body>
+</html>
+
+

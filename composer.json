@@ -1,0 +1,7 @@
+{
+    "require": {
+        "kriswallsmith/buzz": "*",
+        "swiftmailer/swiftmailer": "^5.4",
+        "facebook/php-sdk-v4": "^4.0"
+    }
+}
