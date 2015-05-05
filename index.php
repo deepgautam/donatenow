@@ -216,6 +216,7 @@ else
 // load vendor (should be befor loading core files)
 require_once './vendor/autoload.php';
 
+
 require_once BASEPATH.'core/CodeIgniter.php';
 /* End of file index.php */
 /* Location: ./index.php */
